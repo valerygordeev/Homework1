@@ -1,7 +1,7 @@
-# manual_kernel_update
-homework1
-```
+## homework1
+
 Обновление ядра
+```
 1.Устанавливаем плагин перезагрузки 
 	vagrant plugin install vagrant-reload
 2. Загружаем систему "generic/centos8s"  версии 4.3.4 в ВМ с помощью vagrant
@@ -34,8 +34,9 @@ homework1
 	kernel-ml-modules-6.8.6-1.el8.elrepo.x86_64
 	kernel-ml-core-6.8.6-1.el8.elrepo.x86_64
 	kernel-ml-6.8.6-1.el8.elrepo.x86_64
-
+```
 Создание образа системы
+```
 1. В директории с Vagrantfile cоздаем директорию packer, в ней директории http и scripts.
 2. В директории packer создаем файл centos.json и заполняем его кодом указанном в задании. В директории http создаем файл vagrant.ks, в директории scripts создаем файлы scripts stage-1-kernel-update.sh и stage-2-clean.sh, и заполняем их кодом указанном в задании.
 3. Обновляем контрольную сумму в файле centos.json для загрузки образа https://mirror.linux-ia64.org/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso, взяв их на сайте https://mirror.linux-ia64.org/centos/8-stream/isos/x86_64/CHECKSUM:
@@ -82,8 +83,9 @@ homework1
 8. Выходим и удаляем ВМ:
      exit
      vagrant destroy -f
-     
+```     
 Загрузка образа в Vagrant cloud
+```
 1. Авторизируемся в vagrant cloud
    vagrant cloud auth login
 2. Публикуем box на vagrant cloud 
