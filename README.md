@@ -45,15 +45,14 @@
      packer build -force centos.json
 6. Окончание процесса сборки завершается сообщением:
 
-     Build 'virtualbox-iso.centos-8stream' finished after 1 hour 4 minutes.
+     Build 'virtualbox-iso.centos-8stream' finished after 55 minutes 28 seconds.
 
-     ==> Wait completed after 1 hour 4 minutes
+     ==> Wait completed after 55 minutes 28 seconds
 
      ==> Builds finished. The artifacts of successful builds are:
      --> virtualbox-iso.centos-8stream: 'virtualbox' provider box: centos-8-kernel-6-x86_64-Minimal.box
 ```
-     	/assets/images/Images/Screenshot%20from%202024-05-13%2016-45-13.png
-
+![](./Images/Screenshot%20from%202024-05-13%2016-45-13.png)     
 ```
 7. Проверяем созданный образ:
      - добавляем образ:
@@ -62,7 +61,9 @@
 	==> box: Adding box 'UpdateKernel' (v0) for provider: 
 	    box: Unpacking necessary files from: file:///home/valery/homework1/packer/centos-8-kernel-6-x86_64-Minimal.box
 	==> box: Successfully added box 'UpdateKernel' (v0) for ''!
-
+```
+![](./Images/Screenshot%20from%202024-05-13%2017-04-40.png) 
+```
     - Проверяем добавленный образ в списке вм:
 	valery@valery-notebook:~/homework1/packer$ vagrant box list
 	bento/centos-8.4   (virtualbox, 202110.26.0)
@@ -83,6 +84,9 @@
        vagrant ssh
        [vagrant@otus-c8 ~]$ uname -r
        6.7.1-1.el8.elrepo.x86_64
+```
+![](./Images/Screenshot%20from%202024-05-14%2017-47-01.png) 
+```
 8. Выходим и удаляем ВМ:
      exit
      vagrant destroy -f
@@ -110,7 +114,9 @@ Version:              1.0
 Provider:             virtualbox
 Architecture:         amd64
 Default Architecture: yes
-
-Принтскрин ЛК на vagrant cloud
+```
+![](./Images/Screenshot%20from%202024-05-15%2009-39-10.png) 
+![https://app.vagrantup.com/valerygordeev/boxes/centos8kernel6](./Images/Screenshot%20from%202024-05-15%2010-08-59.png) 
+```
 
        
