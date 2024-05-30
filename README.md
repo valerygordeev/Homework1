@@ -51,7 +51,10 @@
 
      ==> Builds finished. The artifacts of successful builds are:
      --> virtualbox-iso.centos-8stream: 'virtualbox' provider box: centos-8-kernel-6-x86_64-Minimal.box
-     
+```
+     	/assets/images/Images/Screenshot%20from%202024-05-13%2016-45-13.png
+
+```
 7. Проверяем созданный образ:
      - добавляем образ:
        	valery@valery-notebook:~/homework1/packer$ vagrant box add --name UpdateKernel centos-8-kernel-6-x86_64-Minimal.box
